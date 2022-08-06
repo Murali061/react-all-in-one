@@ -1,5 +1,5 @@
 import { createSlice , PayloadAction} from "@reduxjs/toolkit";
-import { Notes } from "../components/models";
+import { Notes } from "../../components/models";
 
 const initialState: Notes[] = []
 

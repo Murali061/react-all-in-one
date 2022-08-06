@@ -4,7 +4,7 @@ import CreateNotes from "../components/home/CreateNotes";
 import Header from "../components/home/Header";
 import NotesList from "../components/home/NotesList";
 import { Notes } from "../components/models";
-import { useAppSelector } from "../redux/hooks";
+import { useAppSelector } from "../redux/Notes/hooks";
 
 
 type Props = {};

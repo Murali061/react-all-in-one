@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { Button, Form, FormGroup } from 'react-bootstrap'
-import { useAppDispatch } from '../../redux/hooks';
-import { addNotes } from '../../redux/NotesSlice';
+import { useAppDispatch } from '../../redux/Notes/hooks';
+import { addNotes } from '../../redux/Notes/NotesSlice';
 import { Notes } from '../models';
 
 type Props = {}

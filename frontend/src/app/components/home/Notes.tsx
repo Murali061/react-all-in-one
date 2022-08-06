@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Card } from 'react-bootstrap'
-import { useAppDispatch } from '../../redux/hooks'
-import { deleteNotes } from '../../redux/NotesSlice'
+import { useAppDispatch } from '../../redux/Notes/hooks'
+import { deleteNotes } from '../../redux/Notes/NotesSlice'
 import { Notes } from '../models'
 
 type Props = {
