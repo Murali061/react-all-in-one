@@ -1,9 +1,13 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
+const bodyParser = require('body-parser')
 
 const PORT = 3001;
 
+app.use(cors());
 
+app.use(bodyParser())
 app.get('/', (req, res) => {
     res.send("hello");
 })
@@ -13,16 +17,19 @@ app.get('/notes', (req, res) => {
 })
 
 app.delete('/notes', (req, res) => {
+    
     const {id} = req.body;
      notes = notes.filter((note) => note.id !== id);
      res.send(notes);
 })
 
 app.post('/notes', (req, res) => {
+
     const {note} = req.body;
     notes.push(note);
     res.send("Note added successfully")
 })
+
 
 app.listen(PORT);
 
